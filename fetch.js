@@ -38,6 +38,4 @@ function changeArticle( id )
         document.querySelector('#main-content').innerHTML = data;
         $('#main-content').fadeIn();
     })
-
-    history.pu
 }
