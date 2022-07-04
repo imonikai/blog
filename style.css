@@ -1,0 +1,39 @@
+.blog-title {
+    line-height: 0.7em;
+}
+
+.sub-title {
+    font-size: 0.3em;
+}
+
+.article-title {
+    margin-bottom: 1em;
+}
+
+.card-link {
+    color: black;
+    display: block;
+    margin-bottom: 1.7em;
+}
+
+.card-link :hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.sidenav-trigger  {
+    display: block;
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+#editor {
+    margin-bottom: 3em;
+}
+
+.done-btn {
+    margin-bottom: 3em;
+}
+
+#main-content h3 {
+    font-size: 3em;
+}
