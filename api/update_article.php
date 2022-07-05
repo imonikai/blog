@@ -40,6 +40,7 @@
             $content = $_POST['content'];
             $displayFlag = h($_POST['displayFlag']);
 
+            $content = preg_replace('/<script.*?>.*?<\/script>/mis', '', $content);
 
             $dbh = new PDO('sqlite:../db/blog.db');
             $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
