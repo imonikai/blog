@@ -1,4 +1,6 @@
-window.onload  = function() {
+'use strict';
+
+window.addEventListener('load', () => {
     const url = new URL(window.location.href);
     const id = url.searchParams.get('id');
     const target = '../api/get_article_data.php?id=' + id + '&requireHTML=1';
@@ -31,4 +33,4 @@ window.onload  = function() {
     {
         document.querySelector('.blog-title').innerHTML = '新規作成';
     }
-}
+}, false);

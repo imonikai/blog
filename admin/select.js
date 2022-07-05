@@ -1,26 +1,30 @@
-const deleteBtn = document.querySelector('.delete-btn'); 
+'use strict';
 
-deleteBtn.addEventListener('click', (e) => {
+window.addEventListener('load', ()=> {
+    const deleteBtn = document.querySelector('.delete-btn'); 
 
-    e.preventDefault();
-
-    const url = new URL(deleteBtn.href);
-
-    fetch(url)
-    .then(response => {
-        return response.json();
-    }).then(data => {
-        console.log(data)
-        if(data.result != 'OK')
-        {
-            throw new Error('操作が完了できませんでした');
-        }
-        else
-        {
-            window.location.href = './index.php';
-        } 
-    }).catch(err => {
-        alert(err);
-        console.log(err);
-    })
-});
+    deleteBtn.addEventListener('click', (e) => {
+    
+        e.preventDefault();
+    
+        const url = new URL(deleteBtn.href);
+    
+        fetch(url)
+        .then(response => {
+            return response.json();
+        }).then(data => {
+            console.log(data)
+            if(data.result != 'OK')
+            {
+                throw new Error('操作が完了できませんでした');
+            }
+            else
+            {
+                window.location.href = './index.php';
+            } 
+        }).catch(err => {
+            alert(err);
+            console.log(err);
+        })
+    });
+}, false);

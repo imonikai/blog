@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-window.onload = function() {
+window.addEventListener('load', () => {
     topPage();
 
     document.querySelector('.top-link').addEventListener('click', (e) => {
@@ -19,4 +19,4 @@ window.onload = function() {
             }
         }
     );
-};
+}, false);
