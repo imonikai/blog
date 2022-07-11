@@ -1,6 +1,8 @@
 'use strict';
 
 window.addEventListener('load', ()=> {
+
+    editor.getSession().setUseWrapMode(true);
     document.querySelector("#submit-button").addEventListener('click', (e) => {
 
         e.preventDefault();
